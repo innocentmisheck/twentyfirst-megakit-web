@@ -1236,6 +1236,10 @@
     overflow: hidden;
 }
 
+.g-media__body:hover {
+    background-color: #00b94e;
+}
+
 
 /*----------------------------------
   Box Shadow
