@@ -10,21 +10,28 @@ const path = require('path');
 //Routes used to go here
 app.set('port', process.env.PORT || 2021)
 
+// Handlebars Middleware
+app.set("views", path.join(__dirname, 'Views'))
+app.engine('handlebars', exphbs({
+    defaultLayout: 'main',
+    layoutsDir: __dirname + '/Views/layouts/',
+    partialsDir: __dirname + '/Views/partials/'
+}))
+app.set('view engine', 'handlebars')
+
+
+app.get('/', (req, res) =>
+    res.render('home', {
+        title: 'Home',
+    })
+);
+
 
 app.use(compression());
 app.use(express.static(path.join(__dirname, 'Public')));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.json({ limit: '50mb' }));
 app.set('trust proxy', 1);
-
-// Handlebars Middleware
-app.set('views', path.join(__dirname, 'Views'));
-app.engine('handlebars', exphbs({
-    defaultLayout: 'main',
-    layoutsDir: path.join(__dirname, 'Views/layouts/'),
-    partialsDir: path.join(__dirname, 'Views/partials/')
-}));
-app.set('view engine', 'handlebars');
 
 //app = setApplicationRoutes(app, sm)
 //registerViewEngineHelpers()
