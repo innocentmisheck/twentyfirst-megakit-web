@@ -2002,8 +2002,8 @@ pre code {
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px
+    margin-right: 0px;
+    margin-left: 0px
 }
 
 .col-lg-1,
@@ -3839,9 +3839,11 @@ fieldset[disabled] .btn-primary:hover {
 }
 
 .btn-success {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c
+    color: #00b94e;
+    background-color: transparent;
+    border: 2px solid #00b94e;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 .btn-success.focus,
