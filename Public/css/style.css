@@ -152,7 +152,7 @@ p {
 /* Links */
 
 a {
-    color: #fff;
+    color: #656565;
     text-decoration: none;
 }
 
@@ -164,6 +164,18 @@ a:hover {
 
 a:focus {
     outline: none;
+}
+
+.social_media_links {
+    border: 2px dotted #00b94e;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.social_media_links:hover {
+    color: #00b94e;
+    cursor: pointer;
+    border: 2px solid #00b94e;
 }
 
 
@@ -280,7 +292,7 @@ fieldset[disabled] .s-btn {
 
 .s-btn--white-brd:focus,
 .s-btn--white-brd:hover {
-    color: #222324;
+    color: #00b94e;
     background: #fff;
     border-color: #fff;
 }
@@ -2184,6 +2196,27 @@ fieldset[disabled] .s-btn {
     .s-header-v2__dropdown-on-hover:hover>.s-header-v2__dropdown-menu {
         display: block;
     }
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0 !important;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        margin-top: 15px;
+        /* Black w/ opacity */
+    }
 }
 
 
@@ -2638,8 +2671,11 @@ fieldset[disabled] .s-btn {
     color: #00b94e !important;
 }
 
+.headline_category {
+    color: white;
+}
+
 .headline_category:hover {
-    border-bottom: 2px double #00b94e;
     color: #00b94e;
 }
 
@@ -2713,7 +2749,7 @@ fieldset[disabled] .s-btn {
 }
 
 .project_card {
-    background-image: linear-gradient(#00b94e, black);
+    background-image: linear-gradient(#00b94e, rgb(35, 36, 37));
     color: white;
     padding: 1rem;
     border-radius: 50px;
@@ -2774,24 +2810,27 @@ fieldset[disabled] .s-btn {
 
 .modal {
     display: none;
-    /* Hidden by default */
+    /*Hiddenbydefault*/
     position: relative;
-    /* Stay in place */
+    /*Stayinplace*/
     z-index: 1;
-    /* Sit on top */
-    left: 50%;
+    /*Sitontop*/
+    /*left: 50%;
+    */
     top: 50%;
     width: 100%;
-    /* Full width */
+    /*Fullwidth*/
     height: 100%;
-    /* Full height */
+    /*Fullheight*/
     overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
+    /*Enablescrollifneeded*/
     margin-top: 15px;
-    /* Black w/ opacity */
+    /*Blackw/opacity*/
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .modal-header {
@@ -2804,6 +2843,7 @@ fieldset[disabled] .s-btn {
     display: inline-flex !important;
     color: #00b94e;
     font-size: 25px;
+    text-align: left;
 }
 
 
@@ -2814,7 +2854,7 @@ fieldset[disabled] .s-btn {
     margin: 15% auto;
     /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid #00b94e;
     width: 80%;
     color: black;
     /* Could be more or less, depending on screen size */
@@ -2836,7 +2876,7 @@ fieldset[disabled] .s-btn {
 
 .close:hover,
 .close:focus {
-    color: #aaa;
+    color: #00b94e;
     text-decoration: none;
     cursor: pointer;
 }
@@ -2847,4 +2887,27 @@ fieldset[disabled] .s-btn {
 
 textarea {
     padding: 5px;
+    font-weight: 500;
+}
+
+.project_short_details {
+    font-weight: bold;
+}
+
+select {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+    background-color: #cbcbcb;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+summary:hover {
+    text-decoration: underline;
+    color: #00b94e !important;
+    cursor: pointer;
 }
