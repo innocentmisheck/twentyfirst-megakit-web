@@ -7583,11 +7583,11 @@
 }
 
 .g-bg-color--white-opacity-lightest {
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    background: transparent !important;
 }
 
 .g-bg-color--sky-light {
-    background-color: #f5f8f9 !important;
+    background-color: whitesmoke!important;
 }
 
 .g-bg-color--primary-to-blueviolet-ltr {

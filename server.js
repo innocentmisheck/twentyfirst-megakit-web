@@ -26,6 +26,13 @@ app.get('/', (req, res) =>
     })
 );
 
+app.get('/testimonials', (req, res) =>
+    res.render('testimonials', {
+        title: 'testimonials',
+    })
+);
+
+
 
 app.use(compression());
 app.use(express.static(path.join(__dirname, 'Public')));
