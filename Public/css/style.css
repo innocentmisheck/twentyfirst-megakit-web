@@ -2918,23 +2918,10 @@ summary:hover {
 
 .partners {
     color: #00b94e !important;
-    padding: 10px;
     float: left;
-    margin-bottom: 15px;
-    border-top: 50px solid transparent;
-    border-left: 100px solid black;
-    border-bottom: 50px solid transparent;
     transition: border-left 100s ease;
     -webkit-transition: border-left 100s ease;
     -moz-transition: border-left 100s ease;
     -ms-transition: border-left 100s ease;
     -o-transition: border-left 100s ease;
-}
-
-.partners:hover {
-    background-image: linear-gradient(90deg, rgba(28, 172, 71, 0.93) 0%, rgba(0, 0, 0, 0.93) 100%);
-    color: #fff !important;
-    border-left: 0px;
-    border-top-right-radius: 50px;
-    cursor: pointer;
 }
